@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Homemade Food<span>.</span></a>
+        <ul class="nav">
+            <li><a href="#banner">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="connect.html">Connect</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2>Always Choose Homemade Food</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum obcaecati accusamus eveniet enim molestiae ad ullam quo eaque tempore distinctio possimus, vero ipsam temporibus illo mollitia perspiciatis neque. Fugiat, itaque!</p>
+            <a href="#" class="btn">Our Menu</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="row">
+            <div class="col50">
+                <h2 class="titleText"><span>A</span>bout Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum vero aliquam fugit vel, corporis id animi error quibusdam alias fuga! Error accusantium neque ratione in corporis alias possimus fugiat placeat.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad accusantium harum eum illo illum, expedita asperiores inventore cupiditate ipsa at, libero, nisi necessitatibus? Blanditiis quae esse maiores nostrum sint eius!</p>
+            </div>
+            <div class="col50">
+                <div class="imgBx">
+                    <img src="images/bir.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <div class="title">
+            <h2 class="titleText"><span>M</span>enu</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing eli.
+            </p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="images/kathal.jpg" class="img_box">
+                </div>
+                <div class="text">
+                    <h3>Kathal Biryani</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="images/litti.jpg" class="img_box">
+                </div>
+                <div class="text">
+                    <h3>Litti Chokha</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="images/samosa.jpg" class="img_box">
+                </div>
+                <div class="text">
+                    <h3>Samosa</h3>
+                </div>
+            </div>
+        </div>
+        <div class="title">
+            <a href="#" class="btn">View All</a>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+    </script>
+</body>
+</html>
